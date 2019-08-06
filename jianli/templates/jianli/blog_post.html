@@ -1,0 +1,208 @@
+﻿<html>
+<head>
+    {% load staticfiles %}
+    <title>Mr. Huang的网站</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="{% static 'jianli/favicon.ico' %}">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai-sublime.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href=" {% static 'jianli/css/theme-1.css' %}">
+    
+
+</head> 
+
+<body>
+    
+    <header class="header text-center">	    
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="{% url 'homeindex' %}">Mr. Huang的网站</a></h1>
+        
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">
+				    <img class="profile-image mb-3 rounded-circle mx-auto" src="{% static 'jianli/images/profile.png' %}" alt="image" >
+					
+					<div class="bio mb-3">你好，我是Mr. Huang。<br>在这网站上面，简要地介绍一下自己。<br><a href="{% url 'about' %}"><br/><br/>查找更多介绍</a></div><!--//bio-->
+					<ul class="social-list list-inline py-3 mx-auto">
+
+			            	 <li class="list-inline-item"><a href="https://github.com/spider-study"><i class="fab fa-github fa-fw"></i></a></li>
+			            	<li class="list-inline-item"><a href="https://blog.csdn.net/Programmer_huangtao"><i class="fab fa-pinterest fa-fw"></i></a></li>
+
+			        </ul><!--//social-list-->
+			        <hr> 
+				</div><!--//profile-section-->
+				
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item ">
+					    <a class="nav-link" href="{% url 'jianli_index' %}"><i class="fas fa-home fa-fw mr-2"></i>网站首页<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="{% url 'history' %}"><i class="fas fa-bookmark fa-fw mr-2"></i>工作历史</a>
+					</li>
+
+					<li class="nav-item">
+					    <a class="nav-link" href="{% url 'about' %}"><i class="fas fa-user fa-fw mr-2"></i>关于我</a>
+					</li>
+				</ul>
+				
+				<div class="my-2 my-md-3">
+					<a class="btn btn-primary" href="{% url 'down' %}" target="_blank" >
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        下载我的简历
+                    </a>
+				</div>
+			</div>
+		</nav>
+    </header>
+    
+    <div class="main-wrapper">
+	    
+	    <article class="blog-post px-3 py-5 p-md-5">
+		    <div class="container">
+			    <header class="blog-post-header">
+				    <h2 class="title mb-2">webspider,网页爬虫程序全程一体化操作，自动写爬虫代码，自动部署分布式，不经历代码过程,让每个人都能玩爬虫</h2>
+				    </header>
+
+			    <div class="blog-post-body">
+				    <p><main>
+        <div class="blog-content-box">
+    <div class="article-header-box">
+        <div class="article-header">
+            <div class="article-info-box">
+                <div class="article-bar-top">
+                    <span class="time">2019年04月06日 19:44:44</span>
+                    <a class="follow-nickName" href="https://me.csdn.net/Programmer_huangtao" target="_blank">学无止境-程序猿</a>
+                    <span class="read-count">阅读数 226</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <article class="baidu_pl">
+                <div id="article_content" class="article_content clearfix" data-track-view="{&quot;mod&quot;:&quot;popu_307&quot;,&quot;con&quot;:&quot;,https://blog.csdn.net/Programmer_huangtao/article/details/89059250,&quot;}" data-track-click="{&quot;mod&quot;:&quot;popu_307&quot;,&quot;con&quot;:&quot;,https://blog.csdn.net/Programmer_huangtao/article/details/89059250&quot;}">
+                                                <div class="article-copyright">
+                                                    https://blog.csdn.net/Programmer_huangtao/article/details/89059250                    </div>
+                                <link rel="stylesheet" href="https://csdnimg.cn/release/phoenix/template/css/ck_htmledit_views-3019150162.css">
+                                        <link rel="stylesheet" href="https://csdnimg.cn/release/phoenix/template/css/ck_htmledit_views-3019150162.css">
+                <div class="htmledit_views" id="content_views">
+                                            <blockquote>
+<h1><a name="t0"></a><strong>Web爬虫，也叫<span style="color:#3399ea;">Webspiders-online</span></strong></h1>
+</blockquote>
+
+<h2>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color:#f33b45;" class="">全程web界面操作的爬虫系统</span>，预设定全程一体化操作，使简单的爬虫直接放置链接自动提取，然后复杂度评级高的，要用到专业知识，后期想做到全程web端创建爬虫，自动写入爬虫规则代码，然后界面点击直接部署分布式到服务器上，不经历代码过程，目前在写入规则！遇到问题各种验证码不同，目前的想法是直接跳过使用代理ip，后期看看能不能加个验证码自动分析模块，解决验证码问题，目前，因为没钱购买硬件配置，域名数据库等问题只好本地环境搭建，想测试的最好通知本人，然后我这边<span style="color:#f33b45;">远程给你展示！！！！！远程展示，远程展示，远程展示！！！！</span></h2>
+
+<p><span style="color:#f33b45;"><img alt="" class="has" src="https://img-blog.csdnimg.cn/20190406192238699.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1Byb2dyYW1tZXJfaHVhbmd0YW8=,size_16,color_FFFFFF,t_70"></span></p>
+
+<p>&nbsp; <span style="color:#3399ea;">这个使用一个大佬的框架，二次开发的 ，自动部署分布式的操作&nbsp;</span></p>
+
+<blockquote>
+<h1><a name="t2"></a><span style="color:#f33b45;">&nbsp; &nbsp; 1.这里详细爬虫操作&nbsp;</span></h1>
+</blockquote>
+
+<p><img alt="" class="has" src="https://img-blog.csdnimg.cn/20190406192319474.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1Byb2dyYW1tZXJfaHVhbmd0YW8=,size_16,color_FFFFFF,t_70"></p>
+
+<blockquote>
+<h1><a name="t3"></a>&nbsp; &nbsp;<span style="color:#f33b45;"> &nbsp;2.爬虫的基本信息操作</span></h1>
+</blockquote>
+
+<h1><a name="t4"></a><img alt="" class="has" height="835" src="https://img-blog.csdnimg.cn/20190406192807141.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1Byb2dyYW1tZXJfaHVhbmd0YW8=,size_16,color_FFFFFF,t_70" width="1200">&nbsp;<img alt="" class="has" height="907" src="https://img-blog.csdnimg.cn/20190406192845559.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1Byb2dyYW1tZXJfaHVhbmd0YW8=,size_16,color_FFFFFF,t_70" width="1200"></h1>
+
+<blockquote>
+<h1><a name="t5"></a><span style="color:#f33b45;">&nbsp; &nbsp;3.爬取的信息列表&nbsp;</span></h1>
+</blockquote>
+
+<p><img alt="" class="has" src="https://img-blog.csdnimg.cn/20190406192350361.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1Byb2dyYW1tZXJfaHVhbmd0YW8=,size_16,color_FFFFFF,t_70"></p>
+
+<blockquote>
+<h1><a name="t6"></a>&nbsp; &nbsp; <span style="color:#f33b45;">&nbsp; 4. 详细信息</span></h1>
+</blockquote>
+
+<p><img alt="" class="has" height="881" src="https://img-blog.csdnimg.cn/20190406193533200.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1Byb2dyYW1tZXJfaHVhbmd0YW8=,size_16,color_FFFFFF,t_70" width="1200"></p>
+
+<p><img alt="" class="has" height="908" src="https://img-blog.csdnimg.cn/20190406193630297.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1Byb2dyYW1tZXJfaHVhbmd0YW8=,size_16,color_FFFFFF,t_70" width="1132"></p>
+
+<p><img alt="" class="has" height="908" src="https://img-blog.csdnimg.cn/20190406193713721.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1Byb2dyYW1tZXJfaHVhbmd0YW8=,size_16,color_FFFFFF,t_70" width="1200"></p>
+
+<blockquote>
+<h1><a name="t7"></a><span style="color:#f33b45;">5. 想要的数据，参数展示，或者数据模型简易分析</span></h1>
+</blockquote>
+
+<h1><a name="t8"></a><img alt="" class="has" src="https://img-blog.csdnimg.cn/20190406192416106.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1Byb2dyYW1tZXJfaHVhbmd0YW8=,size_16,color_FFFFFF,t_70"><span style="color:#f33b45;">&nbsp;</span></h1>
+
+<blockquote>
+<h1><a name="t9"></a><span style="color:#f33b45;">6.爬取的数据类型下图</span></h1>
+</blockquote>
+
+<p><img alt="" class="has" src="https://img-blog.csdnimg.cn/20190406192214297.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1Byb2dyYW1tZXJfaHVhbmd0YW8=,size_16,color_FFFFFF,t_70"></p>
+
+<p>&nbsp;</p>
+
+<h2>&nbsp; &nbsp; &nbsp; &nbsp;除非那边给配置，我给你搭建，但是前提要求，给份中高级爬虫工程师的工作就行，要不然只能远程展示！<span style="color:#f33b45;">想要代码的，谢绝，因为还没写完，不想开源，误人子弟，</span>写完之后如果应聘到公司，我这个要看详细规则，再决定要不要开源，后期如果找不到工作了，可能使用这个来赚钱的，哎，也想开源，但是目前我这个大专毕业的程序猿辞职以后找不到工作了，靠老本活着了，能赚钱就不开源了，不好意思了，要是有公司要收系统源代码的话，详谈！！！！！因为还没写完，要是公司凭这个系统收我做员工，最低要求给个中高级爬虫工程师的工资待遇，因为太低了养不起自己，谈何女朋友，谈何房子问题，本来就是程序员了难找对象了，还要条件，哎，没办法！！！！！！！！！！！接受一切帮助，从物质到分享，例如，多功能分析验证码模块想法，免费的代理等方面，投资等，详情请添加微信或者手机具体沟通，微信添加的话请加备注:公司的发公司加职业，或者个人名称加目的，例如腾讯公司hr或者工程师/某某某学生分享/某某投资公司或投资人想要了解情况，这样的类型，<span style="color:#f33b45;">最后说下代码还没写完，不开源，除非合作开发，给工作，或者投资开发，</span>想要代码请读上述条件，通过的给！</h2>
+
+<blockquote>
+<h1><a name="t11"></a><span style="color:#3399ea;">个人微信号就是本手机号13439731205，</span><span style="color:#f33b45;">接受一切帮助经验分享；可用投资或工作或有偿方式换取代码，谢绝上来就要代码的，可远程简单展示！！！</span></h1>
+</blockquote>
+                                    </div>
+                    </div>
+    </article>
+</div>
+
+    </main> </p>
+
+    </div><!--//main-wrapper-->
+    
+
+    <!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->  
+    <div id="config-panel" class="config-panel d-none d-lg-block">
+        <div class="panel-inner">
+            <a id="config-trigger" class="config-trigger config-panel-hide text-center" href="#"><i class="fas fa-cog fa-spin mx-auto" data-fa-transform="down-6" ></i></a>
+            <h5 class="panel-title">更换颜色</h5>
+            <ul id="color-options" class="list-inline mb-0">
+                <li class="theme-1 active list-inline-item"><a data-style="{% static 'jianli/css/theme-1.css' %}" href="#"></a></li>
+                <li class="theme-2  list-inline-item"><a data-style="{% static 'jianli/css/theme-2.css' %}" href="#"></a></li>
+                <li class="theme-3  list-inline-item"><a data-style="{% static 'jianli/css/theme-3.css' %}" href="#"></a></li>
+                <li class="theme-4  list-inline-item"><a data-style="{% static 'jianli/css/theme-4.css' %}" href="#"></a></li>
+                <li class="theme-5  list-inline-item"><a data-style="{% static 'jianli/css/theme-5.css' %}" href="#"></a></li>
+                <li class="theme-6  list-inline-item"><a data-style="{% static 'jianli/css/theme-6.css' %}" href="#"></a></li>
+                <li class="theme-7  list-inline-item"><a data-style="{% static 'jianli/css/theme-7.css' %}" href="#"></a></li>
+                <li class="theme-8  list-inline-item"><a data-style="{% static 'jianli/css/theme-8.css' %}" href="#"></a></li>
+            </ul>
+            <a id="config-close" class="close" href="#"><i class="fa fa-times-circle"></i></a>
+        </div><!--//panel-inner-->
+    </div><!--//configure-panel-->
+
+    
+       
+    <!-- Javascript -->
+
+    <script src="{% static 'jianli/plugins/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'jianli/plugins/popper.min.js' %}"></script>
+    <script src="{% static 'jianli/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+    <!-- Page Specific JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="{% static 'jianli/js/blog.js' %}"></script>
+    
+    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+        <script src="{% static 'jianli/js/demo/style-switcher.js' %}" ></script>
+    
+
+</body>
+</html> 
+

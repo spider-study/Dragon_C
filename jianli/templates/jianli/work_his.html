@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    {% load staticfiles %}
+    <title>Mr. Huang的网站</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+    <link rel="shortcut icon" href="{% static 'jianli/favicon.ico' %}">
+
+    <!-- FontAwesome JS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="{% static 'jianli/css/theme-1.css' %}">
+
+
+</head>
+
+<body>
+
+    <header class="header text-center">
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="{% url 'homeindex' %}">Mr. Huang的网站</a></h1>
+
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">
+				    <img class="profile-image mb-3 rounded-circle mx-auto" src="{% static 'jianli/images/profile.png' %}" alt="image" >
+
+					<div class="bio mb-3">你好，我是Mr. Huang。<br>在这网站上面，简要地介绍一下自己。<br><a href="{% url 'about' %}"><br/><br/>查找更多介绍</a></div><!--//bio-->
+					<ul class="social-list list-inline py-3 mx-auto">
+
+			            <li class="list-inline-item"><a href="https://github.com/spider-study"><i class="fab fa-github fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://blog.csdn.net/Programmer_huangtao"><i class="fab fa-pinterest fa-fw"></i></a></li>
+
+			        </ul><!--//social-list-->
+			        <hr>
+				</div><!--//profile-section-->
+
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item ">
+					    <a class="nav-link" href="{% url 'jianli_index' %}"><i class="fas fa-home fa-fw mr-2"></i>网站首页<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+					    <a class="nav-link" href="{% url 'history' %}"><i class="fas fa-bookmark fa-fw mr-2"></i>工作历史</a>
+					</li>
+
+					<li class="nav-item">
+					    <a class="nav-link" href="{% url 'about' %}"><i class="fas fa-user fa-fw mr-2"></i>关于我</a>
+					</li>
+				</ul>
+
+				<div class="my-2 my-md-3">
+                        <a class="btn btn-primary" href="{% url 'down' %}" target="_blank" >
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        下载我的简历
+                    </a>
+				</div>
+			</div>
+		</nav>
+    </header>
+
+    <div class="main-wrapper">
+
+	    <article class="about-section py-5">
+		    <div class="container">
+			    <h2 class="title mb-3">工作历史</h2>
+
+			    <p>工作历史，工作单位，时间，工作形式，需要的工作职能技术，工作单位使用的技术。</p>
+
+			    <h5 class="mt-5">名称：伟创软件<br>
+                    时间：17.07---<br>
+                    行业类别： 爬虫工程师，数据分析师<br>
+                    薪资：7500-9000   底薪7.5+提成</h5>
+				<p>工作描述：
+                    <br>1.使用网页解析方法：re正则，xpath解析，数据清洗，hash去重，熟练使用多线程异步框架，爬取公司相应的公司信息。
+                    <br>2.MYSQL，MongoDB测试数据库掌握，数据测试。
+                    <br>3.运用爬虫scrapy-redis框架构建公司需要的分布式爬虫，爬去竞争公司的相关信息，解决相应公司的反爬策略，如使用selenium+chromedriver模拟操作，对简单的验证码进行代码编写解析。
+                    <br>4.wedito+u2手机端APP爬取信息，构建手机端爬虫脚本。</p>
+
+			    <h5 class="mt-5">名称：一米兼职<br>
+                    时间：16.11-17.03<br>
+                    行业类别： 数据采集，分析师<br>
+                    薪资：策划运营部 薪资：4500-6000(在校期间兼职)</h5>
+				<p>工作描述：
+                    <br>1.校园课程安排职业规划，一米兼职APP的推广策划、执行、小型沙盘模拟，数据挖掘分析，竞品分析市场，区域性策划，数据分析。
+                    <br>2.使用工具，python爬虫，采集竞品网站APP，招聘类型的商品数据，参与区域性的数据分析工程。
+                    <br>3.使用工具分析采集数据，构建可视化的数据，与相关人员分析业务需要的活动操作。</p>
+
+			    <h5 class="mt-5">名称：天津翡翠集团<br>
+                    时间：16.08-16.11<br>
+                    行业类别：安卓市场  策划执行编写<br>
+                    薪资：00.00 (校内毕业实训)</h5>
+				<p>工作描述：
+                    <br>1.毕业实训期间，天津翡翠集团编写4款小型APP，从策划，UI，部分代码模拟测试。
+                    <br>2.期间参与编写4款小型APP部分代码，执行化操作，策划至后期的部署安卓市场。
+                    <br>3.参与管理相关人员的行动操作，制定计划，分配相关任务人员。</p>
+
+                <h5 class="mt-5">名称：富汇通投资有限公司<br>
+                    时间：16.03-16.08<br>
+                    行业类别：投资类型公司<br>
+                    薪资：4500+提成 (在校兼职) </h5>
+				<p>工作描述：
+                    <br>1.使用工具采集相关客户信息。
+                    <br>2.线上线下访问客户，致使签单，构成合作关系。
+                    <br>3.参与管理相关人员的行动操作，制定计划，分配相关任务人员。</p>
+
+                  <h5 class="mt-5">名称：百胜集团<br>
+                    时间：14.10-16.01<br>
+                    行业类别：服务行业<br>
+                    薪资：3000+提成 (在校兼职) </h5>
+				<p>工作描述：
+                    <br>1.必胜客餐饮公司门店服务生。
+                    <br>2.必胜客餐饮公司门店小管理。</p>
+
+		    </div>
+	    </article><!--//about-section-->
+
+	    <section class="cta-section theme-bg-light py-5">
+		    <div class="container text-center">
+			    <h2 class="heading">联系方式</h2>
+			    <div class="intro">欢迎阅读本网站，本网站为简历网站，如有需要可以留下邮箱沟通.因邮箱系统尚未完成只能通知，最好以上述微信，手机号，QQ号联系，后期会更改。</div>
+			    <!--     {% csrf_token %} -->
+
+                    <form action="{% url 'history' %}" class="signup-form form-inline justify-content-center pt-3" method="POST" >{% csrf_token %}
+                          <span>
+                            公司企业名称 : <input type="text" name="visitor_name" class="form-control " placeholder="公司企业名称" required="required"  >
+                        </span>
+                        <br><br><br>
+                         <span>
+                            公司联系电话 : <input type="number" name="visitor_tel" class="form-control" placeholder="公司联系电话" required="required" >
+
+                        </span>
+                        <br><br><br>
+                        <span>
+                            公司企业邮箱 : <input type="email" name="visitor_email" class="form-control" placeholder="公司企业邮箱" required="required" >
+
+                        </span>
+                        <br><br><br>
+                        <span>
+                            公司需要岗位 : <input type="text" name="visitor_text" class="form-control " placeholder="公司企需要岗位" required="required" >
+                        </span>
+                        <br><br><br>
+                        <span>
+                            岗位职能需求 : <input type="text" name="visitor_context" class="form-control" placeholder="岗位职能需求" required="required" >
+
+                        </span>
+                        <br><br><br>
+                        <span >
+                            <input type="submit"  class="btn btn-info" name="submit1"   href="{% url 'history' %}" value="提交">
+                        </span>
+                    </form>
+
+
+		    </div><!--//container-->
+	    </section>
+
+	    <footer class="footer text-center py-2 theme-bg-dark">
+
+	    </footer>
+
+    </div><!--//main-wrapper-->
+
+
+    <!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->
+    <div id="config-panel" class="config-panel d-none d-lg-block">
+        <div class="panel-inner">
+            <a id="config-trigger" class="config-trigger config-panel-hide text-center" href="#"><i class="fas fa-cog fa-spin mx-auto" data-fa-transform="down-6" ></i></a>
+            <h5 class="panel-title">更换颜色</h5>
+            <ul id="color-options" class="list-inline mb-0">
+                <li class="theme-1 active list-inline-item"><a data-style="{% static 'jianli/css/theme-1.css' %}" href="#"></a></li>
+                <li class="theme-2  list-inline-item"><a data-style="{% static 'jianli/css/theme-2.css' %}" href="#"></a></li>
+                <li class="theme-3  list-inline-item"><a data-style="{% static 'jianli/css/theme-3.css' %}" href="#"></a></li>
+                <li class="theme-4  list-inline-item"><a data-style="{% static 'jianli/css/theme-4.css' %}" href="#"></a></li>
+                <li class="theme-5  list-inline-item"><a data-style="{% static 'jianli/css/theme-5.css' %}" href="#"></a></li>
+                <li class="theme-6  list-inline-item"><a data-style="{% static 'jianli/css/theme-6.css' %}" href="#"></a></li>
+                <li class="theme-7  list-inline-item"><a data-style="{% static 'jianli/css/theme-7.css' %}" href="#"></a></li>
+                <li class="theme-8  list-inline-item"><a data-style="{% static 'jianli/css/theme-8.css' %}" href="#"></a></li>
+            </ul>
+            <a id="config-close" class="close" href="#"><i class="fa fa-times-circle"></i></a>
+        </div><!--//panel-inner-->
+    </div><!--//configure-panel-->
+
+
+
+    <!-- Javascript -->
+    <script src="{% static 'jianli/plugins/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'jianli/plugins/popper.min.js' %}"></script>
+    <script src="{% static 'jianli/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+    <script src="{% static 'jianli/js/demo/style-switcher.js' %}" ></script>
+
+
+</body>
+</html>
+
